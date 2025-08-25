@@ -15,5 +15,12 @@ RSpec.describe ChessApi0ne::Pieces::Rook do
                 expect(@rook).to be_a(ChessApi0ne::Pieces::Rook)
             end
         end
+
+        describe "#move" do
+            it "shuold be able to move across ranks" do
+                expect(@rook.move("a8")).to be(true)
+                expect(@rook.position).to eq("a8")
+            end
+        end
     end
 end

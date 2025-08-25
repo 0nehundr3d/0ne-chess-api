@@ -9,6 +9,7 @@ module ChessApi0ne
 
         def move(position)
             @position = position
+            true
         end
     end
 end

@@ -28,8 +28,7 @@ RSpec.describe ChessApi0ne::Piece do
 
         describe "#move" do
             it "should be able to update its position" do
-                @piece.move("e4")
-
+                expect(@piece.move("e4")).to be(true)
                 expect(@piece.position).to eq("e4")
             end
         end
