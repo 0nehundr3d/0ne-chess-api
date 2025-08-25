@@ -10,6 +10,7 @@ module ChessApi0ne::Pieces
             move_pos[1] = move_pos[1].to_i
 
             return false if (move_pos[1] - current_pos[1]).abs != (move_pos[0] - current_pos[0]).abs
+            return false if @position == position
 
             @position = position
             true

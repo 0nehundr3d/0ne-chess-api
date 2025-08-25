@@ -32,6 +32,10 @@ RSpec.describe ChessApi0ne::Pieces::Bishop do
                 expect(bishop.move("c5")).to be(true)
                 expect(bishop.position).to eq("c5")
             end
+
+            it "should not be able to move on top of itself" do
+                expect(@bishop.move("c1")).to be(false)
+            end
         end
     end
 end
