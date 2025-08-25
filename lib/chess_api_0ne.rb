@@ -3,6 +3,7 @@
 require_relative "chess_api_0ne/version"
 require_relative "chess_api_0ne/piece"
 require_relative "chess_api_0ne/pieces/rook"
+require_relative "chess_api_0ne/pieces/knight"
 
 module ChessApi0ne
   class Error < StandardError; end
