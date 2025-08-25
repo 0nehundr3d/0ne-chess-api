@@ -1,13 +1,17 @@
 PATH
   remote: .
   specs:
-    chess_api_0ne (0.1.0)
-      rspec
+    chess_api_0ne (0.2.0)
 
 GEM
   remote: https://rubygems.org/
   specs:
+    coderay (1.1.3)
     diff-lcs (1.6.2)
+    method_source (1.1.0)
+    pry (0.15.2)
+      coderay (~> 1.1)
+      method_source (~> 1.0)
     rake (13.3.0)
     rspec (3.13.1)
       rspec-core (~> 3.13.0)
@@ -28,6 +32,7 @@ PLATFORMS
 
 DEPENDENCIES
   chess_api_0ne!
+  pry
   rake (~> 13.0)
   rspec (~> 3.0)
 

@@ -1,6 +1,13 @@
 # frozen_string_literal: true
 
 require_relative "chess_api_0ne/version"
+require_relative "chess_api_0ne/piece"
+require_relative "chess_api_0ne/pieces/rook"
+require_relative "chess_api_0ne/pieces/knight"
+require_relative "chess_api_0ne/pieces/bishop"
+require_relative "chess_api_0ne/pieces/queen"
+require_relative "chess_api_0ne/pieces/king"
+require_relative "chess_api_0ne/pieces/pawn"
 
 module ChessApi0ne
   class Error < StandardError; end
