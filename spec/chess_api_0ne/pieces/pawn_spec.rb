@@ -74,6 +74,10 @@ RSpec.describe ChessApi0ne::Pieces::Pawn do
                     expect(@pawn.move("e4")).to be(false)
                 end
             end
+
+            it "should not be able to move on top of itself" do
+                expect(@pawn.move("e2")).to be(false)
+            end
         end
     end
 end
