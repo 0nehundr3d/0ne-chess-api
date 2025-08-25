@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 require_relative "chess_api_0ne/version"
+require_relative "chess_api_0ne/piece"
 
 module ChessApi0ne
   class Error < StandardError; end
