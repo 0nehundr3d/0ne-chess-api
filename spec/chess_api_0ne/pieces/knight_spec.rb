@@ -49,6 +49,10 @@ RSpec.describe ChessApi0ne::Pieces::Knight do
                 expect(@knight.move("c2")).to be(false)
                 expect(@knight.position).to eq("b1")
             end
+
+            it "should not be able to move on top of itself" do
+                expect(@knight.move("b1")).to be(false)
+            end
         end
     end
 end
